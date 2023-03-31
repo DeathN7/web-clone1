@@ -1,0 +1,78 @@
+.profile_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.profile_infor {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.profile_infor img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.profile_detail h2 {
+  margin-bottom: 10px;
+}
+
+.profile_detail button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile_detail input {
+  margin-bottom: 11px;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.profile_detail button.profile_editButton {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.profile_plans {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.profile_plans button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profiel_SignOut {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
