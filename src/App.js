@@ -19,17 +19,26 @@ function App() {
   };
 
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
-          <Route path="/login" element={<Login onLogin={handleLogin} />} />
-          <Route path="/signup" element={<SignUpScreen />} />
-          <Route path="/profile" element={<Profile isLoggedIn={isLoggedIn} onLogout={handleLogout} />} />
-          <Route path="/news" element={<NewsScreen />} />
-        </Routes>
-      </div>
-    </Router>
+    // <Router>
+    //   <div className="App">
+    //     <Routes>
+    //       <Route path="/" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
+    //       <Route path="/login" element={<Login onLogin={handleLogin} />} />
+    //       <Route path="/signup" element={<SignUpScreen />} />
+    //       <Route path="/profile" element={<Profile isLoggedIn={isLoggedIn} onLogout={handleLogout} />} />
+    //       <Route path="/news" element={<NewsScreen />} />
+    //     </Routes>
+    //   </div>
+    // </Router>
+
+<Router>
+<div className="App">
+  <Routes>
+    <Route path="/home" element={<Home />} />
+    <Route path="/news" element={<NewsScreen />} />
+  </Routes>
+</div>
+</Router>
   );
 }
 

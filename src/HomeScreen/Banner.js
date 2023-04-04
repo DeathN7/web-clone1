@@ -4,7 +4,7 @@ import requests from "../requests";
 import "./Banner.css";
 
 function Banner() {
-    const  [moive , setMovie] = useState([]);
+    const  [movie , setMovie] = useState([]);
 
     useEffect(() => {
       async function fetchData(){
@@ -27,20 +27,20 @@ function Banner() {
     <header className='banner'
     style={{
       backgroundSize: "cover",
-      backgroundImage: moive?.backdrop_path ? `url("http://image.tmdb.org/t/p/original/${moive.backdrop_path}")` : "",
+      backgroundImage: movie?.backdrop_path ? `url("http://image.tmdb.org/t/p/original/${movie.backdrop_path}")` : "",
       backgroundPosition: "center center",
     }}
   >
       <div className='banner-contents'>
         <h1 className='banner-titles'>
-          {moive?.title || moive?.name || moive?.original_name}
+          {movie?.title || movie?.name || movie?.original_name}
         </h1>
 
         <div className='banner_buttons'>
           <button className='banner_button'>Play</button>
           <button className='banner_button'>My List</button>
         </div>
-        <h1 className='banner_description'>{truncate(moive?.overview,250)}</h1>
+        <h1 className='banner_description'>{truncate(movie?.overview,250)}</h1>
       </div>
 
       <div className='banner-fadeBottom'/>
